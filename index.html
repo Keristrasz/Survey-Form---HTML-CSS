@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Registration Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill this form to complete your registration:</p>
+
+    <form id="survey-form">
+      <fieldset class="fieldset">
+        <label id="name-label"
+          ><fieldset id="name-label" class="setname">
+            First name:
+            <input
+              required
+              id="name"
+              placeholder="Enter your First name"
+              type="text"
+            /></fieldset
+        ></label>
+        <label
+          ><fieldset class="setname">
+            Last name:
+            <input
+              required
+              id="lastname"
+              placeholder="Enter your Last name"
+              type="text"
+            /></fieldset
+        ></label>
+        <label id="email-label"
+          ><fieldset class="setname">
+            E-mail:
+            <input
+              required
+              id="email"
+              placeholder="Enter your email"
+              type="email"
+            /></fieldset
+        ></label>
+        <label id="number-label"
+          ><fieldset id="number-label" class="setname">
+            Age (optional):
+            <input
+              min="13"
+              max="120"
+              placeholder="Enter your age"
+              id="number"
+              type="number"
+            /></fieldset
+        ></label>
+        <label
+          ><fieldset id="password" class="setname">
+            Password:
+            <input
+              required
+              pattern="[a-z0-5]{8,}"
+              placeholder="Enter your password"
+              type="password"
+            /></fieldset
+        ></label>
+      </fieldset>
+      <fieldset class="fieldSet">
+        <fieldset class="setname">Type of account:</fieldset>
+        <label
+          ><fieldset class="setname">
+            Personal account<input
+              value="personal-acc"
+              class="checkbox"
+              required
+              name="account-type"
+              type="radio"
+            /></fieldset
+        ></label>
+        <label
+          ><fieldset class="setname">
+            Business account<input
+              value="business-acc"
+              class="checkbox"
+              required
+              name="account-type"
+              type="radio"
+            /></fieldset
+        ></label>
+      </fieldset>
+      <fieldset class="fieldSet">
+        <label
+          ><fieldset id="name-label" class="setname">
+            Where did you hear about us?
+            <select id="dropdown" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Internet</option>
+              <option value="2">Friends</option>
+              <option value="3">News</option>
+              <option value="4">Other</option>
+            </select>
+          </fieldset></label
+        >
+        <label
+          ><fieldset id="name-label" class="setname">
+            Any additional details:
+            <textarea
+              class="comment"
+              name="bio"
+              rows="3"
+              cols="25"
+            ></textarea></fieldset
+        ></label>
+        <label
+          ><fieldset class="setname">
+            I accept terms of service:
+            <input
+              value="yesterms"
+              class="checkbox"
+              required
+              name="account-type"
+              type="checkbox"
+            /></fieldset
+        ></label>
+        <label
+          ><fieldset class="setname">
+            I want to recieve daily product information:
+            <input
+              value="yesnews"
+              class="checkbox"
+              name="account-type"
+              type="checkbox"
+            /></fieldset
+        ></label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+  <footer>
+    <p>
+      Created in <a href="https://code.visualstudio.com/">Visual Studio Code</a>
+    </p>
+  </footer>
+</html>
